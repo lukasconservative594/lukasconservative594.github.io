@@ -1,0 +1,30 @@
+    {% assign page_title = page.title | default: site.title %}
+    {% assign meta_description = page.meta_description | default: site.description %}
+    {% assign canonical_path = page.canonical | default: page.url %}
+    {% if canonical_path contains '://' %}
+      {% assign canonical_url = canonical_path %}
+    {% else %}
+      {% assign canonical_url = canonical_path | absolute_url %}
+    {% endif %}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{{ meta_description }}" />
+    <meta name="author" content="{{ site.author.name }}" />
+    <link rel="canonical" href="{{ canonical_url }}" />
+
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:title" content="{{ page_title }}" />
+    <meta property="og:description" content="{{ meta_description }}" />
+    <meta property="og:url" content="{{ canonical_url }}" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="theme-color" content="#121212" />
+
+    <title>{% if page.title and page.title != site.title %}{{ page.title }} &middot; {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+    <link rel="stylesheet" media="all" href="{{ '/assets/css/styles.css' | relative_url }}" />
+    <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}" />
+    {% feed_meta %}

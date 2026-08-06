@@ -1,0 +1,50 @@
+# ============================================================
+# Site settings — edit these first.
+# ============================================================
+title: "Abdullah Azzam"
+description: "Abdullah Azzam is a student of ... at UIN Syarif Hidayatullah Jakarta. His work focuses on ..."
+
+# Set `url` to your GitHub Pages address.
+#   User site  (repo named <username>.github.io) -> url: "https://<username>.github.io", baseurl: ""
+#   Project site (repo named anything else)      -> url: "https://<username>.github.io", baseurl: "/<repo-name>"
+url: "https://durovwannabe.github.io"
+baseurl: "/website-"
+
+# Shown in the sidebar and footer.
+author:
+  name: "Abdullah Azzam"
+  role: "Undergraduate Student"
+  department: "Faculty of Social and Political Sciences"
+  department_url: "https://fisip.uinjkt.ac.id/"
+  institution: "UIN Syarif Hidayatullah Jakarta"
+  institution_url: "https://www.uinjkt.ac.id/"
+  address: "Jl. Ir. H. Juanda No. 95, Ciputat, Tangerang Selatan 15412, Indonesia"
+  email: "abdullah.azzam21@mhs.uinjkt.ac.id"
+
+markdown: kramdown
+permalink: ":basename:output_ext"
+theme: null
+
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
+  - .github/
+  - .gitignore
+  - .gitattributes
+  - .DS_Store
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
