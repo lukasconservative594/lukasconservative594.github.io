@@ -34,11 +34,17 @@ The `url` and `baseurl` in `_config.yml` must match where the site lives:
 | Repository name | `url` | `baseurl` |
 | --- | --- | --- |
 | `durovwannabe.github.io` | `https://durovwannabe.github.io` | `""` |
-| anything else, e.g. `website-` | `https://durovwannabe.github.io` | `"/website-"` |
+| anything else, e.g. `Website-` | `https://durovwannabe.github.io` | `"/Website-"` |
 
-This repo is `website-`, so `baseurl` is set to `/website-`. If you later rename the
-repo to `durovwannabe.github.io`, set `baseurl` back to `""`. Getting this wrong is the
-usual reason a deployed site loads with no styling.
+This repo is `Website-`, so `baseurl` is set to `/Website-`. Match the capitalisation
+exactly: Pages paths are case-sensitive, so `/website-` would serve the site with no
+styling. If you later rename the repo to `durovwannabe.github.io`, set `baseurl` back
+to `""`. Getting this wrong is the usual reason a deployed site loads unstyled.
+
+**Pages needs a public repo on the free plan.** This repository is currently private,
+and Pages for private repositories requires GitHub Pro, Team, or Enterprise. Either
+make the repo public under **Settings → General → Danger Zone → Change visibility**,
+or upgrade the account.
 
 ## Previewing locally
 

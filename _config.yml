@@ -7,8 +7,10 @@ description: "Abdullah Azzam is a student of ... at UIN Syarif Hidayatullah Jaka
 # Set `url` to your GitHub Pages address.
 #   User site  (repo named <username>.github.io) -> url: "https://<username>.github.io", baseurl: ""
 #   Project site (repo named anything else)      -> url: "https://<username>.github.io", baseurl: "/<repo-name>"
+# Must match the repository name exactly, including capitals — Pages paths are
+# case-sensitive, and a mismatch serves the site with no CSS.
 url: "https://durovwannabe.github.io"
-baseurl: "/website-"
+baseurl: "/Website-"
 
 # Shown in the sidebar and footer.
 author:
