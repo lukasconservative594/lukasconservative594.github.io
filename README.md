@@ -36,31 +36,23 @@ path after it — only when the repository is named exactly `<username>.github.i
 username is fixed by the account, so the address always contains the account name
 unless you bring your own domain.
 
-`abdullah-azzam` is taken on GitHub, as are `abdullahazzam`, `azzamabdullah`,
-`azzam-abdullah`, and `abdazzam`. That leaves three routes:
-
-**1. Keep the account, rename the repository** — free, one step, what this config
-currently expects.
+**This config targets `https://abd-azzam.github.io`.** Two renames, in this order:
 
 ```
-Website-  ->  durovwannabe.github.io      Settings -> General -> Repository name
+1. Account:     DurovWannaBe -> abd-azzam              Settings -> Account -> Change username
+2. Repository:  Website-     -> abd-azzam.github.io    Settings -> General -> Repository name
 ```
 
-Gives `https://durovwannabe.github.io`. Nothing else to change.
+`abd-azzam` was unregistered when this was written. If it has since been claimed,
+`abdazzam21` was also free; `abdullah-azzam`, `abdullahazzam`, `azzamabdullah`,
+`azzam-abdullah`, `abdazzam`, and `a-azzam` are all taken. Whatever you land on, set
+`url: "https://<newname>.github.io"` and leave `baseurl: ""`.
 
-**2. Rename the account to something still free, then the repository.** These looked
-unregistered at the time of writing — check in the browser before committing to one,
-since availability changes and reserved names do not always show up:
-`abdullahazzam21`, `azzamabdullah21`, `abdullah-azzam-id`, `azzam-uinjkt`.
+If you would rather not rename the account, name the repository
+`durovwannabe.github.io` instead and set `url: "https://durovwannabe.github.io"` —
+`baseurl` stays empty either way.
 
-```
-Account:     DurovWannaBe -> <newname>              Settings -> Account -> Change username
-Repository:  Website-     -> <newname>.github.io    Settings -> General -> Repository name
-```
-
-Then set `url: "https://<newname>.github.io"` and leave `baseurl: ""`.
-
-**3. Use a custom domain** — the only route to your actual name, and the one most
+**A custom domain** is the alternative — the only route to your full name, and the one most
 academics take. Works with any username and any repository name, so no renaming at
 all, and the address survives moving off GitHub Pages later. Costs roughly $10–15 a
 year for the domain.
@@ -79,8 +71,8 @@ serve the site while the domain is unverified.
 
 | What you end up with | `url` | `baseurl` |
 | --- | --- | --- |
-| Repo `durovwannabe.github.io` | `https://durovwannabe.github.io` | `""` |
-| Account and repo both renamed | `https://<newname>.github.io` | `""` |
+| Account `abd-azzam`, repo `abd-azzam.github.io` — **current config** | `https://abd-azzam.github.io` | `""` |
+| Account unchanged, repo `durovwannabe.github.io` | `https://durovwannabe.github.io` | `""` |
 | Custom domain | `https://yourdomain.com` | `""` |
 | Any other repo name, e.g. `Website-` | `https://durovwannabe.github.io` | `"/Website-"` |
 

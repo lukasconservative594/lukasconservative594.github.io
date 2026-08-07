@@ -4,21 +4,19 @@
 title: "Abdullah Azzam"
 description: "Abdullah Azzam is a student of ... at UIN Syarif Hidayatullah Jakarta. His work focuses on ..."
 
-# Configured for a GitHub Pages USER SITE at https://durovwannabe.github.io
+# Configured for a GitHub Pages USER SITE at https://abd-azzam.github.io
 #
 # A user site is served only when the repository is named exactly
-# <username>.github.io. So this config needs one rename:
-#   Website-  ->  durovwannabe.github.io
-# (Settings -> General -> Repository name)
+# <username>.github.io, so this needs BOTH renames, in this order:
+#   1. Account:     DurovWannaBe -> abd-azzam
+#                   (Settings -> Account -> Change username)
+#   2. Repository:  Website-     -> abd-azzam.github.io
+#                   (Settings -> General -> Repository name)
 #
-# The empty baseurl is only correct for a user site. If you keep the repository
-# named Website-, it stays a project site and you need:
-#   url: "https://durovwannabe.github.io"
-#   baseurl: "/Website-"
-#
-# To publish under your own name instead, a custom domain is the way — it works
-# with any username and any repository name. See the README.
-url: "https://durovwannabe.github.io"
+# Until both are done the site still serves from the old address. The empty
+# baseurl is only correct for a user site — if the repository keeps any other
+# name it stays a project site and needs baseurl: "/<repo-name>".
+url: "https://abd-azzam.github.io"
 baseurl: ""
 
 # Shown in the sidebar and footer.

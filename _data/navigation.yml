@@ -21,12 +21,11 @@ utility:
   - title: Google Scholar
     url: https://scholar.google.com/
     external: true
-  # If you rename the GitHub account to abdullah-azzam, change this to
-  # https://github.com/abdullah-azzam — GitHub does not redirect old profile
-  # URLs, so this link would 404. Same for the GitHub link in
-  # _includes/contact.html.
+  # Points at the post-rename profile. This 404s until the account rename
+  # DurovWannaBe -> abd-azzam goes through; GitHub does not redirect old
+  # profile URLs. The same link appears in _includes/contact.html.
   - title: GitHub
-    url: https://github.com/DurovWannaBe
+    url: https://github.com/abd-azzam
     external: true
   - title: Email
     url: mailto:abdullah.azzam21@mhs.uinjkt.ac.id
