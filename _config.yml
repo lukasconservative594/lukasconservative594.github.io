@@ -4,13 +4,21 @@
 title: "Abdullah Azzam"
 description: "Abdullah Azzam is a student of ... at UIN Syarif Hidayatullah Jakarta. His work focuses on ..."
 
-# Set `url` to your GitHub Pages address.
-#   User site  (repo named <username>.github.io) -> url: "https://<username>.github.io", baseurl: ""
-#   Project site (repo named anything else)      -> url: "https://<username>.github.io", baseurl: "/<repo-name>"
-# Must match the repository name exactly, including capitals — Pages paths are
-# case-sensitive, and a mismatch serves the site with no CSS.
-url: "https://durovwannabe.github.io"
-baseurl: "/Website-"
+# Configured for a GitHub Pages USER SITE at https://abdullah-azzam.github.io
+#
+# A user site needs the repository to be named exactly <username>.github.io, so
+# BOTH of these have to be true, not just the second:
+#   1. the GitHub account is renamed  DurovWannaBe -> abdullah-azzam
+#   2. this repository is renamed     Website-     -> abdullah-azzam.github.io
+#
+# Renaming only the repository leaves the account as DurovWannaBe, which makes
+# this an ordinary project site at
+#   https://durovwannabe.github.io/abdullah-azzam.github.io/
+# and the empty baseurl below would serve it with no CSS. In that case use:
+#   url: "https://durovwannabe.github.io"
+#   baseurl: "/abdullah-azzam.github.io"
+url: "https://abdullah-azzam.github.io"
+baseurl: ""
 
 # Shown in the sidebar and footer.
 author:

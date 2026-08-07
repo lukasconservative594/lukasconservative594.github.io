@@ -27,24 +27,47 @@ Then work through `research.html`, `writing.html`, `teaching.html`, `talks.html`
 ## Publishing on GitHub Pages
 
 In the repository, go to **Settings → Pages** and set the source to **Deploy from a
-branch**, branch `main`, folder `/ (root)`. GitHub builds the Jekyll site for you.
+branch**, pick the branch, folder `/ (root)`. GitHub builds the Jekyll site for you.
 
-The `url` and `baseurl` in `_config.yml` must match where the site lives:
+### Getting the address you want
 
-| Repository name | `url` | `baseurl` |
+This config targets a **user site** at `https://abdullah-azzam.github.io`. GitHub only
+serves a user site when the repository is named exactly `<username>.github.io`, so the
+account name and the repository name have to agree. Two renames, not one:
+
+1. **Account:** `DurovWannaBe` → `abdullah-azzam`
+   (Settings → Account → Change username)
+2. **Repository:** `Website-` → `abdullah-azzam.github.io`
+   (Settings → General → Repository name)
+
+Renaming only the repository gives you a *project* site instead, at
+`https://durovwannabe.github.io/abdullah-azzam.github.io/`, and the empty `baseurl`
+would serve it unstyled.
+
+| What you end up with | `url` | `baseurl` |
 | --- | --- | --- |
-| `durovwannabe.github.io` | `https://durovwannabe.github.io` | `""` |
-| anything else, e.g. `Website-` | `https://durovwannabe.github.io` | `"/Website-"` |
+| Account and repo both renamed | `https://abdullah-azzam.github.io` | `""` |
+| Repo `durovwannabe.github.io`, account unchanged | `https://durovwannabe.github.io` | `""` |
+| Any other repo name, e.g. `Website-` | `https://durovwannabe.github.io` | `"/Website-"` |
 
-This repo is `Website-`, so `baseurl` is set to `/Website-`. Match the capitalisation
-exactly: Pages paths are case-sensitive, so `/website-` would serve the site with no
-styling. If you later rename the repo to `durovwannabe.github.io`, set `baseurl` back
-to `""`. Getting this wrong is the usual reason a deployed site loads unstyled.
+Match capitalisation exactly — Pages paths are case-sensitive, and a mismatched
+`baseurl` is the usual reason a deployed site loads with no styling.
 
-**Pages needs a public repo on the free plan.** This repository is currently private,
-and Pages for private repositories requires GitHub Pro, Team, or Enterprise. Either
-make the repo public under **Settings → General → Danger Zone → Change visibility**,
-or upgrade the account.
+### After renaming the account
+
+- Update the GitHub links in `_data/navigation.yml` and `_includes/contact.html`.
+  Old *profile* URLs are not redirected and will 404.
+- Update your git remote:
+  `git remote set-url origin https://github.com/abdullah-azzam/abdullah-azzam.github.io`
+- The old username becomes claimable by someone else, so do not leave links pointing
+  at it.
+
+### Notes
+
+- Pages on a **private** repository requires GitHub Pro, Team, or Enterprise. On the
+  free plan the repository must be public.
+- The first build takes a minute or two. Check progress under the repository's
+  **Actions** tab.
 
 ## Previewing locally
 
