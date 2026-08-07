@@ -31,34 +31,68 @@ branch**, pick the branch, folder `/ (root)`. GitHub builds the Jekyll site for 
 
 ### Getting the address you want
 
-This config targets a **user site** at `https://abdullah-azzam.github.io`. GitHub only
-serves a user site when the repository is named exactly `<username>.github.io`, so the
-account name and the repository name have to agree. Two renames, not one:
+GitHub serves a **user site** — one at the bare `https://<username>.github.io`, with no
+path after it — only when the repository is named exactly `<username>.github.io`. The
+username is fixed by the account, so the address always contains the account name
+unless you bring your own domain.
 
-1. **Account:** `DurovWannaBe` → `abdullah-azzam`
-   (Settings → Account → Change username)
-2. **Repository:** `Website-` → `abdullah-azzam.github.io`
-   (Settings → General → Repository name)
+`abdullah-azzam` is taken on GitHub, as are `abdullahazzam`, `azzamabdullah`,
+`azzam-abdullah`, and `abdazzam`. That leaves three routes:
 
-Renaming only the repository gives you a *project* site instead, at
-`https://durovwannabe.github.io/abdullah-azzam.github.io/`, and the empty `baseurl`
-would serve it unstyled.
+**1. Keep the account, rename the repository** — free, one step, what this config
+currently expects.
+
+```
+Website-  ->  durovwannabe.github.io      Settings -> General -> Repository name
+```
+
+Gives `https://durovwannabe.github.io`. Nothing else to change.
+
+**2. Rename the account to something still free, then the repository.** These looked
+unregistered at the time of writing — check in the browser before committing to one,
+since availability changes and reserved names do not always show up:
+`abdullahazzam21`, `azzamabdullah21`, `abdullah-azzam-id`, `azzam-uinjkt`.
+
+```
+Account:     DurovWannaBe -> <newname>              Settings -> Account -> Change username
+Repository:  Website-     -> <newname>.github.io    Settings -> General -> Repository name
+```
+
+Then set `url: "https://<newname>.github.io"` and leave `baseurl: ""`.
+
+**3. Use a custom domain** — the only route to your actual name, and the one most
+academics take. Works with any username and any repository name, so no renaming at
+all, and the address survives moving off GitHub Pages later. Costs roughly $10–15 a
+year for the domain.
+
+1. Buy a domain, e.g. `abdullahazzam.com`.
+2. At the registrar, create four `A` records for the apex pointing at
+   `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`, and a
+   `CNAME` for `www` pointing at `<username>.github.io`.
+3. In **Settings → Pages → Custom domain**, enter the domain and save. GitHub commits
+   a `CNAME` file to the repository for you.
+4. Tick **Enforce HTTPS** once the certificate is issued (can take a few minutes).
+5. Set `url: "https://abdullahazzam.com"` and `baseurl: ""` here.
+
+Do not add a `CNAME` file by hand before the domain resolves — Pages will fail to
+serve the site while the domain is unverified.
 
 | What you end up with | `url` | `baseurl` |
 | --- | --- | --- |
-| Account and repo both renamed | `https://abdullah-azzam.github.io` | `""` |
-| Repo `durovwannabe.github.io`, account unchanged | `https://durovwannabe.github.io` | `""` |
+| Repo `durovwannabe.github.io` | `https://durovwannabe.github.io` | `""` |
+| Account and repo both renamed | `https://<newname>.github.io` | `""` |
+| Custom domain | `https://yourdomain.com` | `""` |
 | Any other repo name, e.g. `Website-` | `https://durovwannabe.github.io` | `"/Website-"` |
 
 Match capitalisation exactly — Pages paths are case-sensitive, and a mismatched
 `baseurl` is the usual reason a deployed site loads with no styling.
 
-### After renaming the account
+### If you rename the account
 
 - Update the GitHub links in `_data/navigation.yml` and `_includes/contact.html`.
   Old *profile* URLs are not redirected and will 404.
 - Update your git remote:
-  `git remote set-url origin https://github.com/abdullah-azzam/abdullah-azzam.github.io`
+  `git remote set-url origin https://github.com/<newname>/<newname>.github.io`
 - The old username becomes claimable by someone else, so do not leave links pointing
   at it.
 
